@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url(imagess/backg1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    font-size: 50px;
+    left: 50%;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+.inner-container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 
+    25%, rgba(0,23,149,0.6) 50%, rgba(255,0,0,0.6) 75%,rgba(0,23,149,0.6) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    transition: 2s;
+}
+
+.container:hover .inner-container{
+    background-position: 100% 100%;
+}
+
+nav{
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+text-decoration: none;
+font-size: 13px;
+}
+
+.text-box {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+
+.text-box h5{
+    font-size: 20px;
+}
+.text-box a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .container h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        padding: 0;
+    }
+    .text-box{
+        text-align: center;
+    }
+    .text-box h5{
+        font-size: 12px;
+    }
+    .text-box h3{
+        font-size: 22px;
+    }
+    .inner-container{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 
+        25%, rgba(0,23,149,0.6) 50%, rgba(255,0,0,0.6) 75%,rgba(0,23,149,0.6) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: 400% 400%;
+        transition: 2s;
+    }
+    
+    .container:hover .inner-container{
+        background-position: 100% 100%;
+    }
+    .text-box a{
+        text-decoration: none;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+    }
+}
+/*-------------About---------*/
+
+.boutcontainer{
+    width: 100%;
+    min-height: 100vh;
+    background: url(imagess/backgr7.jpg);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-size: 50px;
+}
+.cta {
+    font-size: 20px;
+    margin: 10px auto;
+    width: 100%;
+    background-image: url(imagess/list1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cta h5 {
+    letter-spacing: 2px;
+    padding: 0;
+}
+.bouttext{
+    text-align: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.315), rgba(4, 9, 30, 0.767)), url(imagess/boutceo.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+    padding: 30px 30px 30px 30px;
+
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(126, 65, 65, 0.76);
+    border: 5px solid rgba(126, 65, 65, 0.76);
+    padding: 6px 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 5px solid #f44336;
+    background: white;
+    transition: 1s;
+}
+.nftcta{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.315), rgba(4, 9, 30, 0.767)), url(imagess/boutceo.jpg);
+    color: #f3efee;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    font-size: 24px;
+}
+.nftctaceo{
+    color: #e93326;
+    text-align: center;
+}
+
+.nftctarow {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.row1{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.row1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.r2{
+    height: 317px;
+}
+/*-------------Footer---------*/
+.footer{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.fend{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.cta h4{
+    font-size: 30px;
+}
+
+
+
+@media(max-width: 700px){
+    h1{
+        font-size: 24px;
+    }
+    .hero-btn{
+        font-size: 10px;
+        padding: 6px 10px;
+        display: inline;
+    }
+    .nftcta{
+       font-size: 16px;
+    }
+    .r2{
+        height: 125px;
+        padding-bottom: 0;
+    }
+    .fend{
+        font-size: 10px;
+    }
+    .nftctaceo{
+        font-size: 24px;
+    }
+    .bouttext{
+        font-size: 16px;
+    }
+}
+
+/*-------------Footer---------*/
+
+
+.grow1{
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+.grow1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+.ghero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid rgba(126, 65, 65, 0.76);
+    padding: 6px 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.gcta {
+    font-size: 20px;
+    margin: 10px auto;
+    width: 100%;
+    background-image: url(imagess/between2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+}
+.gcta2 {
+    font-size: 20px;
+    margin: 10px auto;
+    width: 100%;
+    background-image: url(imagess/logo1.JPG);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+}
+.gcta h4{
+    padding-top: 5px;
+    padding-bottom: 20px;
+text-align: left;
+font-size: 50px;
+}
+
+.gcta2 h4{
+    padding-top: 5px;
+    padding-bottom: 20px;
+text-align: left;
+font-size: 50px;
+}
+
+/*-------------Login sign up---------*/
+
+.lgrow1{
+    flex-basis: 50%;
+    text-align: center;
+}
+.lgrow1 img {
+    width: 100%;
+    min-height: 735px;
+}
+.log{
+    background-color: #fff;
+    background-size: cover;
+    min-height: 735px;
+}
+form{
+    text-align: left;
+    height: 550px;
+}
+label{
+    text-align: left;
+    font-size: 20px;
+}
+
+input{
+    font-size: 50%;
+    color: #5a5854;
+}
+
+/*-------------Login sign up---------*/
+
+.tab{
+    border-bottom: 1px solid #efefef;
+    margin: 10px;
+    padding-bottom: 2px;
+    width: 200px;
+}
+.title{
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+/*-------------Login sign up---------*/
+.Tnftctaceo{
+    color: rgba(73, 26, 26, 0.966);
+    text-align: center;
+    background-color: #efefef;
+}
+td{
+    background-color: rgba(109, 51, 51, 0.329);
+    text-align: left;
+    padding: 18px;
+    color: #fff;
+    font-size: 45px;
+    background-size: cover;
+    width: 50%;
+    
+}
+
+
+.tabtgrow1{
+        margin-left: 10px;
+        width: 48%;
+        display: flex;
+        text-align: center;
+        overflow: auto;
+        
+    }
+.table{
+        overflow: auto;
+}
+
+.tabr2{
+    width: 100%;
+}
+.tabtgrow1{
+    flex-basis: 50%;
+}
